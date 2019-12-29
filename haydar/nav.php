@@ -89,6 +89,8 @@ body {
         <li><a href="./?page=bobot">Bobot</a>
         <li><a href="./?page=penilaian">Penilaian</a>
        	<li><a href="./?page=hasil">Hasil</a>
+		<li><a href="./proses/logout.php">Logout</a>
+		
            
 </nav>
 </html>

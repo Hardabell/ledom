@@ -31,6 +31,9 @@ switch ($page){
     case 'tambahbobot':
         include 'page/tambahbobot.php';
         break;
+	case 'akun':
+        include 'page/akun.php';
+        break;
     default:
         include 'page/404.php';
 }

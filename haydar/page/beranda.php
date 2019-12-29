@@ -9,7 +9,7 @@
 <div class="panel">
     <div class="panel-middle text-center">
         <h1>
-            Selamat Datang, Admin
+            Selamat Datang <?php echo $_SESSION['nama_admin']?>
             
         </h1>
     </div>

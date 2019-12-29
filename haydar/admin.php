@@ -1,5 +1,11 @@
 <?php
 require './connect.php';
+
+session_start();
+if($_SESSION['nama_admin']=='')
+{
+    header("location:./login.php");
+}
 ?>
 <!DOCTYPE html>
 <html>

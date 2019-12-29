@@ -21,9 +21,16 @@ $sifat=@$_POST['sifat'];
 $nilai=@$_POST['nilai'];
 $keterangan=@$_POST['keterangan'];
 $bobot=@$_POST['bobot'];
+$nama_admin=@$_POST['nama_admin'];
+$email_admin=@$_POST['email_admin'];
+$password=@$_POST['password'];
 switch ($op){
     case 'lomba'://tambah data barang
         $query="INSERT INTO lomba (nama_lomba) VALUES ('$lomba')";
+        $crud->addData($query,$konek);
+    break;
+	case 'akun'://tambah data barang
+        $query="INSERT INTO account (nama_admin, emai_admin, password) VALUES ('$nama_admin', '$email_admin', '$password')";
         $crud->addData($query,$konek);
     break;
     case 'peserta': //tambah data supplier

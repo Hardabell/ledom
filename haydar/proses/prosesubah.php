@@ -20,6 +20,9 @@ $sifat=@$_POST['sifat'];
 $nilai=@$_POST['nilai'];
 $keterangan=@$_POST['keterangan'];
 $bobot=@$_POST['bobot'];
+$nama_admin=@$_POST['nama_admin'];
+$email_admin=@$_POST['email_admin'];
+$password=@$_POST['password'];
 switch ($op){
     case 'lomba':
         $query="UPDATE lomba SET nama_lomba='$lomba' WHERE id_lomba='$id'";
@@ -28,6 +31,10 @@ switch ($op){
     case 'peserta':
         $query="UPDATE peserta SET nama_peserta='$nama_peserta',jenis_kelamin='$jenis_kelamin',tgl_lahir='$tgl_lahir',pekerjaan='$pekerjaan',usia='$usia' WHERE id_peserta='$id'";
         $crud->update($query,$konek,'./?page=peserta');
+        break;
+	case 'akun':
+        $query="UPDATE account SET nama_admin='$nama_admin',emai_admin='$email_admin',password='$password' WHERE id_admin='$id'";
+        $crud->update($query,$konek,'./?page=akun');
         break;
     case 'kriteria':
         $cek="SELECT nama_kriteria FROM kriteria WHERE nama_kriteria='$kriteria'";
