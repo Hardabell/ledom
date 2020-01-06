@@ -2,6 +2,9 @@
 
      
             <h2 class="text-center">Halamanan Utama Aplikasi Pemilihan Model</h2>
+              <a  href="./?page=tambahakun">+ Tambah Admin Baru </a>
+              <br>
+              <br>
    
         
 
@@ -9,7 +12,7 @@
 <div class="panel">
     <div class="panel-middle text-center">
         <h1>
-            Selamat Datang <?php echo $_SESSION['nama_admin']?>
+            Selamat Datang <?php echo $_SESSION['nama_admin']?> 
             
         </h1>
     </div>
@@ -22,5 +25,6 @@
  - Helmi Adi Pratama<br>
  - Muhammad Aldifasha<br>
  - Ufairoh Nabihah</h3>
+
 
 </footer>

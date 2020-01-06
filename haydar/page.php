@@ -34,6 +34,13 @@ switch ($page){
 	case 'akun':
         include 'page/akun.php';
         break;
+     case 'tambahakun':
+        include 'page/tambahakun.php';
+        break;
     default:
         include 'page/404.php';
+
+ case 'penilaian':
+        include 'page/nilai.php';
+        break;
 }
